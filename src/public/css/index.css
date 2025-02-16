@@ -1,0 +1,116 @@
+.header {
+    background: #FFFFFF;
+}
+
+.header__inner {
+    margin: 0 auto;
+    max-width: 1512px;
+    height: 53px;
+    padding: 10px 10px;
+}
+
+.header__logo {
+    font-family: "Vesper Libre", serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #F5C800;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+body{
+background-color: #F8F8F8;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    max-width: 1512px;
+}
+
+
+.add-product-button {
+    width: 137px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background-color: #FFA929;
+    color: #4B4B4B;
+    font-size: 16px;
+}
+
+.search-container {
+    width: 240px;
+    height: 114px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 240px;
+    background-color:　#FFFFFF;
+    color: #E0DFDE;
+    font-size: 14px;
+    border-radius: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E0DFDE;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #F5C800;
+    color: #4B4B4B;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 18px;
+    color: #666;
+}
+
+.product-card button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
