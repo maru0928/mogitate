@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@400;500;700;900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
 </head>
 
   <body>
@@ -62,7 +65,7 @@
             <span class="form__label--required">必須</span>
           </div>
           <div class="form__group-content">
-            <div class="form__input--text">
+            <div class="form__input-file-text">
               <input type="file" id="image">
             </div>
             <div class="form__error">
@@ -75,7 +78,7 @@
             <span class="form__label--item">季節</span>
             <span class="form__label--required">必須</span>
           </div>
-        <div class="season-container">
+        <div class="form_radio_group">
         　<label><input type="radio" name="season" value="spring"> 春</label>
         　<label><input type="radio" name="season" value="summer"> 夏</label>
         　<label><input type="radio" name="season" value="autumn"> 秋</label>
@@ -91,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="form__button">
+        <div class="form__button-container">
           <button class="back" type="back">戻る</button>
           <button class="form__button-register" type="register">登録</button>
         </div>
