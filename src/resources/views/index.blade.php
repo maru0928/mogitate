@@ -24,8 +24,8 @@
 
   <main>
     <div class="product-container">
-        <h1>商品一覧</h1>
-        <button class="add-product-button">＋商品を追加</button>
+          <h1>商品一覧</h1>
+    　　　　<button class="add-product-button">＋商品を追加</button>
     </div>
     <div class="search-container">
         <input type="text" placeholder="商品名で検索">

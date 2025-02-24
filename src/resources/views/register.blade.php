@@ -31,6 +31,7 @@
         <h2>商品登録</h2>
       </div>
       <form class="form">
+        @csrf
         <div class="form__group">
           <div class="form__group-title">
             <span class="form__label--item">商品名</span>
@@ -38,10 +39,12 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="text" name="product-name" placeholder="商品名を入力" />
+              <input type="text" name="name" placeholder="商品名を入力" value="{{ old('name') }}" />
             </div>
             <div class="form__error">
-              <!--バリデーション機能を実装したら記述します。-->
+              @error('name')
+              {{ $message }}
+              @enderror
             </div>
           </div>
         </div>
@@ -52,10 +55,12 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="number" name="price" placeholder="値段を入力" />
+              <input type="number" name="price" placeholder="値段を入力" value="{{ old('price') }}" />
             </div>
             <div class="form__error">
-              <!--バリデーション機能を実装したら記述します。-->
+              @error('price')
+              {{ $message }}
+              @enderror
             </div>
           </div>
         </div>
@@ -66,10 +71,12 @@
           </div>
           <div class="form__group-content">
             <div class="form__input-file-text">
-              <input type="file" id="image">
+              <input type="file" name="image" id="image"value="{{ old('image') }}" />
             </div>
             <div class="form__error">
-              <!--バリデーション機能を実装したら記述します。-->
+              @error('image')
+              {{ $message }}
+              @enderror
             </div>
           </div>
         </div>
@@ -78,19 +85,32 @@
             <span class="form__label--item">季節</span>
             <span class="form__label--required">必須</span>
           </div>
+        <div class="form__group-content">
         <div class="form_radio_group">
-        　<label><input type="radio" name="season" value="spring"> 春</label>
-        　<label><input type="radio" name="season" value="summer"> 夏</label>
-        　<label><input type="radio" name="season" value="autumn"> 秋</label>
-        　<label><input type="radio" name="season" value="winter"> 冬</label>
+        　<label><input type="radio" name="season" value="spring"{{ old('season') == 'spring' ? 'checked' : '' }}> 春</label>
+        　<label><input type="radio" name="season" value="summer"{{ old('season') == 'summer' ? 'checked' : '' }}> 夏</label>
+        　<label><input type="radio" name="season" value="autumn"{{ old('season') == 'autumn' ? 'checked' : '' }}> 秋</label>
+        　<label><input type="radio" name="season" value="winter"{{ old('season') == 'winter' ? 'checked' : '' }}> 冬</label>
     　　　</div>
+         <div class="form__error">
+              @error('season')
+              {{ $message }}
+              @enderror
+            </div>
+          </div>
+        </div>
    　　　 <div class="form__group-title">
             <span class="form__label--item">商品説明</span>
             <span class="form__label--required">必須</span>
           </div>
           <div class="form__group-content">
             <div class="form__input--textarea">
-              <textarea name="description" placeholder="商品の説明を入力"></textarea>
+              <textarea name="description" placeholder="商品の説明を入力"value="{{ old('description') }}"></textarea>
+            </div>
+            <div class="form__error">
+              @error('description')
+              {{ $message }}
+              @enderror
             </div>
           </div>
         </div>
