@@ -87,11 +87,11 @@
           </div>
         <div class="form__group-content">
         <div class="form_radio_group">
-        　<label><input type="radio" name="season" value="spring"{{ old('season') == 'spring' ? 'checked' : '' }}> 春</label>
-        　<label><input type="radio" name="season" value="summer"{{ old('season') == 'summer' ? 'checked' : '' }}> 夏</label>
-        　<label><input type="radio" name="season" value="autumn"{{ old('season') == 'autumn' ? 'checked' : '' }}> 秋</label>
-        　<label><input type="radio" name="season" value="winter"{{ old('season') == 'winter' ? 'checked' : '' }}> 冬</label>
-    　　　</div>
+          <label><input type="radio" name="season" value="spring"{{ old('season') == 'spring' ? 'checked' : '' }}> 春</label>
+          <label><input type="radio" name="season" value="summer"{{ old('season') == 'summer' ? 'checked' : '' }}> 夏</label>
+          <label><input type="radio" name="season" value="autumn"{{ old('season') == 'autumn' ? 'checked' : '' }}> 秋</label>
+          <label><input type="radio" name="season" value="winter"{{ old('season') == 'winter' ? 'checked' : '' }}> 冬</label>
+         </div>
          <div class="form__error">
               @error('season')
               {{ $message }}
@@ -99,7 +99,7 @@
             </div>
           </div>
         </div>
-   　　　 <div class="form__group-title">
+          <div class="form__group-title">
             <span class="form__label--item">商品説明</span>
             <span class="form__label--required">必須</span>
           </div>

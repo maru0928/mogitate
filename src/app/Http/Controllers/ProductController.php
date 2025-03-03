@@ -14,9 +14,9 @@ class ProductController extends Controller
     return view('index', compact('products'));
   }
 
-  public function register(ProductRequest $request)
+  public function register(Request $request)
   {
-    
+
   $product = $request->only(['name', 'price', 'image', 'season' , 'description']);
   return view('register', compact('product'));
   }
